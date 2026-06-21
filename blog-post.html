@@ -5,12 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v6.1.12, mobirise.com">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image:src" content="assets/images/blog-post-meta.png">
+  <meta property="og:image" content="assets/images/blog-post-meta.png">
+  <meta name="twitter:title" content="TF MONEY 按揭博客 | 最新按揭資訊・置業攻略・慳息貼士">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/blue20and20black20minimalist20brand20logo-429x429.png" type="image/x-icon">
-  <meta name="description" content="">
+  <meta name="description" content="TF MONEY 按揭博客提供最新按揭資訊、利率走勢、置業攻略及慳息貼士。助您掌握市場動態，精明置業上車，慳得更多。即時閱讀！">
   
   
-  <title>blog-post</title>
+  <title>TF MONEY 按揭博客 | 最新按揭資訊・置業攻略・慳息貼士</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
@@ -18,7 +22,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Bellota+Text:300,300i,400,400i,700,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellota+Text:300,300i,400,400i,700,700i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=RxQbLk"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=RxQbLk" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=wcpwRm"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=wcpwRm" type="text/css">
 
   
   
@@ -26,8 +30,51 @@
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="menu menu3 cid-vmRU3XY7LN" once="menu" id="menu3-2q">
+  <section data-bs-version="5.1" class="menu menu3 cid-vnaJbqElON" once="menu" id="menu3-6e">
     
+
+    <!-- ===== 自訂 CSS：支援 hover 展開下拉 ===== -->
+    <style>
+        @media (min-width: 992px) {
+            .navbar .dropdown:hover .dropdown-menu {
+                display: block !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+                margin-top: 0 !important;
+            }
+            .navbar .dropdown:hover > .dropdown-toggle {
+                background: transparent !important;
+            }
+            .navbar .dropdown .dropdown-menu {
+                pointer-events: auto;
+            }
+        }
+    </style>
+
+    <!-- ===== 自訂 JavaScript：強制父級跳轉 ===== -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 按揭產品 強制跳轉
+            var productLink = document.querySelector('a[href="product.html"].dropdown-toggle');
+            if (productLink) {
+                productLink.addEventListener("click", function(e) {
+                    window.location.href = "product.html";
+                    e.preventDefault();
+                    e.stopPropagation();
+                });
+            }
+            // 知識中心 強制跳轉
+            var knowledgeLink = document.querySelector('a[href="knowledge.html"].dropdown-toggle');
+            if (knowledgeLink) {
+                knowledgeLink.addEventListener("click", function(e) {
+                    window.location.href = "knowledge.html";
+                    e.preventDefault();
+                    e.stopPropagation();
+                });
+            }
+        });
+    </script>
+
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container">
             <div class="navbar-brand">
@@ -45,18 +92,15 @@
                 </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- 主選單：6項 -->
-                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><!-- 1. 首頁 -->
-                    
-
-                    <!-- 2. 關於我們 -->
-                    
-
-                    <!-- 3. 按揭產品（有子選單） -->
+                <!-- 主選單 -->
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><!-- 1. 關於我們 -->
                     <li class="nav-item">
                         <a class="nav-link link text-black text-primary display-4" href="about.html">關於我們</a>
-                    </li><li class="nav-item dropdown">
-                        <a class="nav-link link text-black dropdown-toggle display-4" href="product.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">按揭產品</a>
+                    </li>
+
+                    <!-- 2. 按揭產品（點擊跳轉 product.html，hover 展開下拉） -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link text-black dropdown-toggle display-4" href="product.html">按揭產品</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-product">
                             <a class="text-black dropdown-item display-4" href="product-introduction.html">按揭轉介</a>
                             <a class="text-black dropdown-item display-4" href="product-second-mortgage.html">物業二按</a>
@@ -66,10 +110,10 @@
                         </div>
                     </li>
 
-                    <!-- 4. 知識中心（有子選單） -->
+                    <!-- 3. 知識中心（點擊跳轉 knowledge.html，hover 展開下拉） -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link link text-black dropdown-toggle show display-4" href="knowledge.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">知識中心</a>
-                        <div class="dropdown-menu show" aria-labelledby="dropdown-knowledge" data-bs-popper="none">
+                        <a class="nav-link link text-black dropdown-toggle display-4" href="knowledge.html">知識中心</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-knowledge">
                             <a class="text-black dropdown-item text-primary display-4" href="blog.html">按揭博客</a>
                             <a class="text-black dropdown-item text-primary display-4" href="calculator.html">按揭計算機</a>
                             <a class="text-black dropdown-item text-primary display-4" href="case-studies.html">個案研究</a>
@@ -77,13 +121,15 @@
                         </div>
                     </li>
 
-                    <!-- 5. 常見問題 -->
-                    
-
-                    <!-- 6. 聯絡我們 -->
+                    <!-- 4. 常見問題 -->
                     <li class="nav-item">
                         <a class="nav-link link text-black text-primary display-4" href="faq.html">常見問題</a>
-                    </li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="contact.html">聯絡我們</a></li></ul>
+                    </li>
+
+                    <!-- 5. 聯絡我們 -->
+                    <li class="nav-item">
+                        <a class="nav-link link text-black text-primary display-4" href="contact.html">聯絡我們</a>
+                    </li></ul>
 
                 <!-- WhatsApp Icon + 號碼 -->
                 <div class="icons-menu">
@@ -93,7 +139,7 @@
                     </a>
                 </div>
 
-                <!-- 其餘 Icon（可選，已保留原有結構） -->
+                <!-- 其餘 Icon（可選） -->
                 
                 
                 
@@ -150,7 +196,51 @@
                     <p class="mbr-text mbr-fonts-style display-7" style="font-size: 1.05rem; line-height: 1.8; margin-top: 1rem;">
                         對於有意置業或轉按的人士，建議密切關注利率走勢，並把握銀行回贈較高的時機入市。
                     </p>
-                   <div class="mbr-section-btn" style="margin-top: 1.5rem;"><a href="blog.html#features3-2m" class="btn btn-outline-primary btn-sm display-4" style="border-radius: 50px; padding: 0.4rem 1.5rem; font-size: 0.9rem;">← 返回文章列表</a></div>
+
+                    <!-- ===== 分享區塊（Facebook・WhatsApp・Instagram・Email・Copy Link） ===== -->
+                    <div style="text-align: center; padding: 1.5rem 0 0.5rem 0; border-top: 2px solid #e8ecf0; margin-top: 1.5rem;">
+                        <p style="font-size: 1rem; font-weight: 600; color: #1a2a6c; margin-bottom: 1rem;">
+                            📤 分享這篇文章
+                        </p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+
+                            <!-- Facebook -->
+                            <a href="#" onclick="shareOn('facebook'); return false;" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; background: #1877F2; color: #fff; padding: 0.45rem 1.2rem; border-radius: 50px; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: all 0.2s;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                Facebook
+                            </a>
+
+                            <!-- WhatsApp -->
+                            <a href="#" onclick="shareOn('whatsapp'); return false;" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; background: #25D366; color: #fff; padding: 0.45rem 1.2rem; border-radius: 50px; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: all 0.2s;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                WhatsApp
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="#" onclick="shareOn('instagram'); return false;" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; background: #E4405F; color: #fff; padding: 0.45rem 1.2rem; border-radius: 50px; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: all 0.2s;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                                Instagram
+                            </a>
+
+                            <!-- Email -->
+                            <a href="#" onclick="shareOn('email'); return false;" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; background: #666666; color: #fff; padding: 0.45rem 1.2rem; border-radius: 50px; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: all 0.2s;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/></svg>
+                                Email
+                            </a>
+
+                            <!-- Copy Link -->
+                            <a href="#" onclick="shareOn('copylink'); return false;" style="display: inline-flex; align-items: center; gap: 6px; background: #1a2a6c; color: #fff; padding: 0.45rem 1.2rem; border-radius: 50px; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: all 0.2s;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M13.06 4.06l-1.06 1.06 4.94 4.94-4.94 4.94 1.06 1.06 6-6-6-6zm-3.12 0l-6 6 6 6 1.06-1.06L5.06 10.06l4.94-4.94L9.94 4.06z"/></svg>
+                                複製連結
+                            </a>
+
+                        </div>
+                        <p style="font-size: 0.75rem; color: #aaa; margin-top: 0.8rem;">
+                            分享文章給有需要嘅朋友
+                        </p>
+                    </div>
+
+                   <div class="mbr-section-btn" style="margin-top: 1.5rem;"><a href="blog.html" class="btn btn-outline-primary btn-sm display-4" style="border-radius: 50px; padding: 0.4rem 1.5rem; font-size: 0.9rem;">← 返回文章列表</a></div>
                 </div>
             </div>
         </div>
@@ -189,7 +279,7 @@
                     <p class="mbr-text mbr-fonts-style display-7" style="font-size: 1.05rem; line-height: 1.8; margin-top: 1rem;">
                         <strong>套現機會</strong>：如果物業已升值，轉按時可同步提高貸款額，套取額外資金作投資或裝修用途。
                     </p>
-                    <div class="mbr-section-btn" style="margin-top: 1.5rem;"><a href="blog.html#features3-2m" class="btn btn-outline-primary btn-sm display-4" style="border-radius: 50px; padding: 0.4rem 1.5rem; font-size: 0.9rem;">← 返回文章列表</a></div>
+                    <div class="mbr-section-btn" style="margin-top: 1.5rem;"><a href="blog.html" class="btn btn-outline-primary btn-sm display-4" style="border-radius: 50px; padding: 0.4rem 1.5rem; font-size: 0.9rem;">← 返回文章列表</a></div>
                 </div>
             </div>
         </div>
@@ -228,7 +318,7 @@
                     <p class="mbr-text mbr-fonts-style display-7" style="font-size: 1.05rem; line-height: 1.8; margin-top: 0.8rem;">
                         <strong>3. 選擇對自僱人士較寬鬆嘅銀行</strong>：不同銀行對自僱人士的審批標準有別，建議透過按揭轉介公司比較不同銀行的取態。
                     </p>
-                    <div class="mbr-section-btn" style="margin-top: 1.5rem;"><a href="blog.html#features3-2m" class="btn btn-outline-primary btn-sm display-4" style="border-radius: 50px; padding: 0.4rem 1.5rem; font-size: 0.9rem;">← 返回文章列表</a></div>
+                    <div class="mbr-section-btn" style="margin-top: 1.5rem;"><a href="blog.html" class="btn btn-outline-primary btn-sm display-4" style="border-radius: 50px; padding: 0.4rem 1.5rem; font-size: 0.9rem;">← 返回文章列表</a></div>
                 </div>
             </div>
         </div>
@@ -271,7 +361,7 @@
                     <p class="mbr-text mbr-fonts-style display-7" style="font-size: 1.05rem; line-height: 1.8; margin-top: 1rem;">
                         申請高成數按揭必須符合以下條件：物業必須為自住用途、申請人必須為固定收入人士、申請時不可持有任何香港住宅物業。(注意，實際最高按揭成數視乎物業類型及申請人收入狀況而定。）
                     </p>
-                    <div class="mbr-section-btn" style="margin-top: 1.5rem;"><a href="blog.html#features3-2m" class="btn btn-outline-primary btn-sm display-4" style="border-radius: 50px; padding: 0.4rem 1.5rem; font-size: 0.9rem;">← 返回文章列表</a></div>
+                    <div class="mbr-section-btn" style="margin-top: 1.5rem;"><a href="blog.html" class="btn btn-outline-primary btn-sm display-4" style="border-radius: 50px; padding: 0.4rem 1.5rem; font-size: 0.9rem;">← 返回文章列表</a></div>
                 </div>
             </div>
         </div>
@@ -315,7 +405,7 @@
                     <p class="mbr-text mbr-fonts-style display-7" style="font-size: 1.05rem; line-height: 1.8; margin-top: 0.8rem;">
                         實際最高按揭成數視乎物業類型及申請人收入狀況而定。
                     </p>
-                    <div class="mbr-section-btn" style="margin-top: 1.5rem;"><a href="blog.html#features3-2m" class="btn btn-outline-primary btn-sm display-4" style="border-radius: 50px; padding: 0.4rem 1.5rem; font-size: 0.9rem;">← 返回文章列表</a></div>
+                    <div class="mbr-section-btn" style="margin-top: 1.5rem;"><a href="blog.html" class="btn btn-outline-primary btn-sm display-4" style="border-radius: 50px; padding: 0.4rem 1.5rem; font-size: 0.9rem;">← 返回文章列表</a></div>
                 </div>
             </div>
         </div>
@@ -356,7 +446,7 @@
                     <p class="mbr-text mbr-fonts-style display-7" style="font-size: 1.05rem; line-height: 1.8; margin-top: 1rem;">
                         居屋業主如需套現或轉按，建議先向房屋署查詢相關規定，並選擇對居屋按揭有經驗的銀行或財務機構協助處理。
                     </p>
-                  <div class="mbr-section-btn" style="margin-top: 1.5rem;"><a href="blog.html#features3-2m" class="btn btn-outline-primary btn-sm display-4" style="border-radius: 50px; padding: 0.4rem 1.5rem; font-size: 0.9rem;">← 返回文章列表</a></div>
+                  <div class="mbr-section-btn" style="margin-top: 1.5rem;"><a href="blog.html" class="btn btn-outline-primary btn-sm display-4" style="border-radius: 50px; padding: 0.4rem 1.5rem; font-size: 0.9rem;">← 返回文章列表</a></div>
                 </div>
             </div>
         </div>
@@ -386,7 +476,7 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="footer4 cid-vmV11Q5q3P" once="footers" id="footer4-4e">
+<section data-bs-version="5.1" class="footer4 cid-vmV11Q5q3P" once="footers" id="footer4-6d">
 
     
 
@@ -406,7 +496,7 @@
                 </div>
 
                 <p class="mbr-text mbr-fonts-style mt-2 display-7" style="font-size: 0.85rem; color: #555; line-height: 1.5; margin-bottom: 0.8rem;">
-                    上市公司集團成員<br>實力按揭專家
+                    上市公司全資附屬公司<br>實力按揭專家
                 </p>
 
                 <!-- Social Icons -->
@@ -464,7 +554,7 @@
                     <li class="mbr-text item-wrap"><a href="blog.html" style="color: #333; text-decoration: none;">按揭博客</a></li>
                     <li class="mbr-text item-wrap"><a href="calculator.html" style="color: #333; text-decoration: none;">按揭計算機</a></li>
                     <li class="mbr-text item-wrap"><a href="case-studies.html" style="color: #333; text-decoration: none;">個案研究</a></li>
-                    <li class="mbr-text item-wrap"><a href="testimonials.html" style="color: #333; text-decoration: none;" class="text-primary">客戶心聲</a></li>
+                    <li class="mbr-text item-wrap"><a href="testimonials.html" style="color: #333; text-decoration: none;">客戶心聲</a></li>
                 </ul>
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 mt-3 display-7" style="color: #1a2a6c; font-weight: 600;">
                     <strong>支援</strong>
@@ -475,20 +565,112 @@
                 </ul>
             </div>
 
-            <!-- ===== 版權聲明 ===== -->
+            <!-- ===== 版權聲明（已修改顏色） ===== -->
             <div class="col-12 mt-4">
                 <hr style="border-color: rgba(0,0,0,0.08);">
-                <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7" style="font-size: 0.8rem; color: #999; text-align: center;">
+                <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7" style="font-size: 0.9rem; color: #333333; text-align: center; line-height: 1.8;">
                     © Copyright 2026 TF Money - All Rights Reserved<br>
-                    TF Money 為 TF Advances Limited 之品牌名稱（放債人牌照號碼：168/2026）<br>
-                    忠告: 借錢梗要還，咪俾錢中介，投訴熱線: 2111 0998
+                    <strong>TF Money 為 TF Advances Limited 之品牌名稱（放債人牌照號碼：168/2026）</strong><br>
+                    <span style="color: #cc0000;">忠告：借錢梗要還，咪俾錢中介</span>，投訴熱線：<strong>2111 0998</strong>
                 </p>
             </div>
 
         </div>
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/4709782" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-builder.html">Free AI Website Software</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  
-  
+</section>
+
+<!-- ============================================================ -->
+<!-- 分享功能 JavaScript -->
+<!-- ============================================================ -->
+<script>
+function shareOn(platform) {
+    var url = encodeURIComponent(window.location.href);
+    var title = encodeURIComponent(document.querySelector('h1, h2, h3').innerText || '文章分享');
+    var text = encodeURIComponent(document.querySelector('h1, h2, h3').innerText || '文章分享');
+
+    var shareUrl = '';
+
+    switch(platform) {
+        case 'facebook':
+            shareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+            window.open(shareUrl, '_blank', 'width=600,height=500');
+            break;
+
+        case 'whatsapp':
+            shareUrl = 'https://api.whatsapp.com/send?text=' + text + '%20' + url;
+            window.open(shareUrl, '_blank', 'width=600,height=500');
+            break;
+
+        case 'instagram':
+            copyToClipboard(window.location.href);
+            showToast('✅ 連結已複製！請到 Instagram 貼上分享。');
+            break;
+
+        case 'email':
+            shareUrl = 'mailto:?subject=' + title + '&body=' + text + '%0A%0A' + url;
+            window.location.href = shareUrl;
+            break;
+
+        case 'copylink':
+            copyToClipboard(window.location.href);
+            showToast('✅ 連結已複製！可以分享到任何平台。');
+            break;
+
+        default:
+            return;
+    }
+}
+
+// 複製到剪貼簿
+function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).catch(function(err) {
+            fallbackCopy(text);
+        });
+    } else {
+        fallbackCopy(text);
+    }
+}
+
+// Fallback 複製方法
+function fallbackCopy(text) {
+    var textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        document.execCommand('copy');
+    } catch (err) {
+        console.error('複製失敗', err);
+    }
+    document.body.removeChild(textarea);
+}
+
+// 顯示 Toast 提示
+function showToast(message) {
+    var toast = document.getElementById('shareToast');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'shareToast';
+        toast.style.cssText = 'position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #1a2a6c; color: #fff; padding: 0.8rem 2rem; border-radius: 50px; font-size: 0.95rem; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.25); display: none; max-width: 90%; text-align: center;';
+        document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.style.display = 'block';
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(function() {
+        toast.style.display = 'none';
+    }, 3500);
+}
+</script>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/smoothscroll/smooth-scroll.js"></script>
+<script src="assets/ytplayer/index.js"></script>
+<script src="assets/dropdown/js/navbar-dropdown.js"></script>
+<script src="assets/theme/js/script.js"></script>
+
 </body>
 </html>

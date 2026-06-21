@@ -7,10 +7,10 @@
   <meta name="generator" content="Mobirise v6.1.12, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/blue20and20black20minimalist20brand20logo-429x429.png" type="image/x-icon">
-  <meta name="description" content="">
+  <meta name="description" content="TF MONEY 常見問題頁面，集合按揭申請、轉按套現、物業二按、居屋業主貸款等常見疑問及專業解答。快速搵到您要嘅答案，置業路上更安心。即時瀏覽！">
   
   
-  <title>faq</title>
+  <title>TF MONEY 常見問題 | 按揭申請・轉按套現・二按居屋 Q&A</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Bellota+Text:300,300i,400,400i,700,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellota+Text:300,300i,400,400i,700,700i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=oU2G7w"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=oU2G7w" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=AhmS3Z"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=AhmS3Z" type="text/css">
 
   
   
@@ -27,8 +27,51 @@
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="menu menu3 cid-vmNgCqC1sc" once="menu" id="menu3-1v">
+  <section data-bs-version="5.1" class="menu menu3 cid-vnaJbqElON" once="menu" id="menu3-6e">
     
+
+    <!-- ===== 自訂 CSS：支援 hover 展開下拉 ===== -->
+    <style>
+        @media (min-width: 992px) {
+            .navbar .dropdown:hover .dropdown-menu {
+                display: block !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+                margin-top: 0 !important;
+            }
+            .navbar .dropdown:hover > .dropdown-toggle {
+                background: transparent !important;
+            }
+            .navbar .dropdown .dropdown-menu {
+                pointer-events: auto;
+            }
+        }
+    </style>
+
+    <!-- ===== 自訂 JavaScript：強制父級跳轉 ===== -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 按揭產品 強制跳轉
+            var productLink = document.querySelector('a[href="product.html"].dropdown-toggle');
+            if (productLink) {
+                productLink.addEventListener("click", function(e) {
+                    window.location.href = "product.html";
+                    e.preventDefault();
+                    e.stopPropagation();
+                });
+            }
+            // 知識中心 強制跳轉
+            var knowledgeLink = document.querySelector('a[href="knowledge.html"].dropdown-toggle');
+            if (knowledgeLink) {
+                knowledgeLink.addEventListener("click", function(e) {
+                    window.location.href = "knowledge.html";
+                    e.preventDefault();
+                    e.stopPropagation();
+                });
+            }
+        });
+    </script>
+
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container">
             <div class="navbar-brand">
@@ -46,18 +89,15 @@
                 </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- 主選單：6項 -->
-                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><!-- 1. 首頁 -->
-                    
-
-                    <!-- 2. 關於我們 -->
-                    
-
-                    <!-- 3. 按揭產品（有子選單） -->
+                <!-- 主選單 -->
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><!-- 1. 關於我們 -->
                     <li class="nav-item">
                         <a class="nav-link link text-black text-primary display-4" href="about.html">關於我們</a>
-                    </li><li class="nav-item dropdown">
-                        <a class="nav-link link text-black dropdown-toggle display-4" href="product.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">按揭產品</a>
+                    </li>
+
+                    <!-- 2. 按揭產品（點擊跳轉 product.html，hover 展開下拉） -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link text-black dropdown-toggle display-4" href="product.html">按揭產品</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-product">
                             <a class="text-black dropdown-item display-4" href="product-introduction.html">按揭轉介</a>
                             <a class="text-black dropdown-item display-4" href="product-second-mortgage.html">物業二按</a>
@@ -67,10 +107,10 @@
                         </div>
                     </li>
 
-                    <!-- 4. 知識中心（有子選單） -->
+                    <!-- 3. 知識中心（點擊跳轉 knowledge.html，hover 展開下拉） -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link link text-black dropdown-toggle show display-4" href="knowledge.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">知識中心</a>
-                        <div class="dropdown-menu show" aria-labelledby="dropdown-knowledge" data-bs-popper="none">
+                        <a class="nav-link link text-black dropdown-toggle display-4" href="knowledge.html">知識中心</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-knowledge">
                             <a class="text-black dropdown-item text-primary display-4" href="blog.html">按揭博客</a>
                             <a class="text-black dropdown-item text-primary display-4" href="calculator.html">按揭計算機</a>
                             <a class="text-black dropdown-item text-primary display-4" href="case-studies.html">個案研究</a>
@@ -78,13 +118,15 @@
                         </div>
                     </li>
 
-                    <!-- 5. 常見問題 -->
-                    
-
-                    <!-- 6. 聯絡我們 -->
+                    <!-- 4. 常見問題 -->
                     <li class="nav-item">
                         <a class="nav-link link text-black text-primary display-4" href="faq.html">常見問題</a>
-                    </li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="contact.html">聯絡我們</a></li></ul>
+                    </li>
+
+                    <!-- 5. 聯絡我們 -->
+                    <li class="nav-item">
+                        <a class="nav-link link text-black text-primary display-4" href="contact.html">聯絡我們</a>
+                    </li></ul>
 
                 <!-- WhatsApp Icon + 號碼 -->
                 <div class="icons-menu">
@@ -94,13 +136,33 @@
                     </a>
                 </div>
 
-                <!-- 其餘 Icon（可選，已保留原有結構） -->
+                <!-- 其餘 Icon（可選） -->
                 
                 
                 
             </div>
         </div>
     </nav>
+</section>
+
+<section data-bs-version="5.1" class="header3 cid-vnbuaiHj48" id="header3-6f">
+    
+    
+    <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(122, 122, 122);"></div>
+    <div class="align-center container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <h1 class="mbr-section-title mbr-fonts-style mb-2 display-1" style="text-align: center; color: #ffffff;">
+                    <strong>常見問題</strong>
+                </h1>
+                <h2 class="mbr-section-subtitle mbr-fonts-style display-5" style="text-align: center; font-weight: normal; color: rgba(255,255,255,0.85);">
+                    按揭申請・轉按套現・物業與法律 Q&amp;A
+                </h2>
+                <p class="mbr-text mbr-fonts-style display-7" style="">&nbsp;</p>
+                
+            </div>
+        </div>
+    </div>
 </section>
 
 <section data-bs-version="5.1" class="tabs content18 cid-vmNoXVBGNq" id="tabs1-1q">
@@ -111,13 +173,7 @@
     
     <div class="container">
         <!-- ===== 標題隱藏（由 Header3 負責） ===== -->
-        <div class="row justify-content-center" style="">
-            <div class="col-12 col-md-10">
-                <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2">
-                    <strong>常見問題</strong></h3>
-                
-            </div>
-        </div>
+        
         <div class="row justify-content-center mt-4">
             <div class="col-12 col-md-10">
                 <ul class="nav nav-tabs mb-4" role="tablist">
@@ -145,9 +201,17 @@
                 <div class="tab-content">
 
                     <!-- ============================================================ -->
-                    <!-- TAB 1：按揭申請（10條） -->
+                    <!-- TAB 1：按揭申請 -->
                     <!-- ============================================================ -->
-                    <div id="tab1" class="tab-pane in active" role="tabpanel">
+                    <div id="faq-application" class="tab-pane in active" role="tabpanel">
+                        <!-- ===== 引言 ===== -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="mbr-fonts-style display-7" style="color: #555; font-size: 1rem; margin-bottom: 1.5rem;">
+                                    無論係上車客定換樓客，申請按揭嘅第一步都係準備文件。以下係最常見嘅申請問題，幫您了解流程同要求。
+                                </p>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div id="accordion1" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
@@ -308,9 +372,17 @@
                     </div>
 
                     <!-- ============================================================ -->
-                    <!-- TAB 2：按揭成數與保險（11條） -->
+                    <!-- TAB 2：按揭成數與保險 -->
                     <!-- ============================================================ -->
-                    <div id="tab2" class="tab-pane" role="tabpanel">
+                    <div id="faq-ltv" class="tab-pane" role="tabpanel">
+                        <!-- ===== 引言 ===== -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="mbr-fonts-style display-7" style="color: #555; font-size: 1rem; margin-bottom: 1.5rem;">
+                                    想借得盡？了解按揭成數上限、按揭保險計劃嘅申請資格同保費計算，幫您用最少首期上車。
+                                </p>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div id="accordion2" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
@@ -486,9 +558,17 @@
                     </div>
 
                     <!-- ============================================================ -->
-                    <!-- TAB 3：轉按套現（8條） -->
+                    <!-- TAB 3：轉按套現 -->
                     <!-- ============================================================ -->
-                    <div id="tab3" class="tab-pane" role="tabpanel">
+                    <div id="faq-refinance" class="tab-pane" role="tabpanel">
+                        <!-- ===== 引言 ===== -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="mbr-fonts-style display-7" style="color: #555; font-size: 1rem; margin-bottom: 1.5rem;">
+                                    想趁低息轉銀行慳息？定係想趁物業升值套現？以下問題幫您了解轉按嘅好處同注意事項。
+                                </p>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div id="accordion3" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
@@ -619,9 +699,17 @@
                     </div>
 
                     <!-- ============================================================ -->
-                    <!-- TAB 4：利率與還款（6條） -->
+                    <!-- TAB 4：利率與還款 -->
                     <!-- ============================================================ -->
-                    <div id="tab4" class="tab-pane" role="tabpanel">
+                    <div id="faq-interest" class="tab-pane" role="tabpanel">
+                        <!-- ===== 引言 ===== -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="mbr-fonts-style display-7" style="color: #555; font-size: 1rem; margin-bottom: 1.5rem;">
+                                    H 按定 P 按？封頂利率係咩？Mortgage Link 點樣慳息？以下問題幫您了解按揭利率同還款方式。
+                                </p>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div id="accordion4" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
@@ -722,9 +810,17 @@
                     </div>
 
                     <!-- ============================================================ -->
-                    <!-- TAB 5：物業與法律及其他（13條） -->
+                    <!-- TAB 5：物業與法律及其他 -->
                     <!-- ============================================================ -->
-                    <div id="tab5" class="tab-pane" role="tabpanel">
+                    <div id="faq-legal" class="tab-pane" role="tabpanel">
+                        <!-- ===== 引言 ===== -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="mbr-fonts-style display-7" style="color: #555; font-size: 1rem; margin-bottom: 1.5rem;">
+                                    物業產權、凶宅、僭建、釘契等法律問題會直接影響按揭審批。以下問題幫您了解相關風險同處理方法。
+                                </p>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div id="accordion5" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
@@ -924,6 +1020,25 @@
                                         </div>
                                     </div>
 
+                                    <!-- ===== Q49：仲有其他問題？ ===== -->
+                                    <div class="card mb-3" style="border: 2px solid #6592e6; border-radius: 12px;">
+                                        <div class="card-header" role="tab" id="heading49" style="background-color: #f0f6ff; border-radius: 12px 12px 0 0;">
+                                            <a role="button" class="panel-title" data-toggle="collapse" data-bs-toggle="collapse" href="#collapse49" aria-expanded="true">
+                                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7" style="color: #1a2a6c;">
+                                                    <strong>💬 仲有其他問題？</strong>
+                                                </h6>
+                                                <span class="sign mbr-iconfont mbri-arrow-down" style="color: #6592e6;"></span>
+                                            </a>
+                                        </div>
+                                        <div id="collapse49" class="panel-collapse noScroll collapse show" role="tabpanel">
+                                            <div class="panel-body">
+                                                <p class="mbr-fonts-style panel-text display-7">
+                                                    如果以上 FAQ 未能解答您嘅疑問，歡迎 <a href="contact.html" style="color: #6592e6; font-weight: 600;">聯絡我們</a>，我哋嘅按揭專員會盡快為您解答。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -935,7 +1050,30 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="footer4 cid-vmV11Q5q3P" once="footers" id="footer4-4e">
+<section data-bs-version="5.1" class="header18 cid-vnbx7Gg4wg" id="header18-6g">
+
+    
+
+    
+    
+
+    <div class="align-center container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-2">
+                    <strong>需要專業按揭建議？</strong>
+                </h1>
+                
+                <p class="mbr-text mbr-fonts-style mbr-white display-7" style="font-size: 1.2rem; opacity: 0.9;">
+                    立即聯絡我們嘅按揭專員，為您度身訂造最合適嘅貸款方案。
+                </p>
+                <div class="mbr-section-btn mt-3"><a class="btn btn-light btn-lg display-4" href="contact.html" style="padding: 0.8rem 3rem; border-radius: 50px; font-weight: 600; font-size: 1.1rem;">📞 聯絡我們</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer4 cid-vmV11Q5q3P" once="footers" id="footer4-6d">
 
     
 
@@ -955,7 +1093,7 @@
                 </div>
 
                 <p class="mbr-text mbr-fonts-style mt-2 display-7" style="font-size: 0.85rem; color: #555; line-height: 1.5; margin-bottom: 0.8rem;">
-                    上市公司集團成員<br>實力按揭專家
+                    上市公司全資附屬公司<br>實力按揭專家
                 </p>
 
                 <!-- Social Icons -->
@@ -1013,7 +1151,7 @@
                     <li class="mbr-text item-wrap"><a href="blog.html" style="color: #333; text-decoration: none;">按揭博客</a></li>
                     <li class="mbr-text item-wrap"><a href="calculator.html" style="color: #333; text-decoration: none;">按揭計算機</a></li>
                     <li class="mbr-text item-wrap"><a href="case-studies.html" style="color: #333; text-decoration: none;">個案研究</a></li>
-                    <li class="mbr-text item-wrap"><a href="testimonials.html" style="color: #333; text-decoration: none;" class="text-primary">客戶心聲</a></li>
+                    <li class="mbr-text item-wrap"><a href="testimonials.html" style="color: #333; text-decoration: none;">客戶心聲</a></li>
                 </ul>
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 mt-3 display-7" style="color: #1a2a6c; font-weight: 600;">
                     <strong>支援</strong>
@@ -1024,19 +1162,19 @@
                 </ul>
             </div>
 
-            <!-- ===== 版權聲明 ===== -->
+            <!-- ===== 版權聲明（已修改顏色） ===== -->
             <div class="col-12 mt-4">
                 <hr style="border-color: rgba(0,0,0,0.08);">
-                <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7" style="font-size: 0.8rem; color: #999; text-align: center;">
+                <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7" style="font-size: 0.9rem; color: #333333; text-align: center; line-height: 1.8;">
                     © Copyright 2026 TF Money - All Rights Reserved<br>
-                    TF Money 為 TF Advances Limited 之品牌名稱（放債人牌照號碼：168/2026）<br>
-                    忠告: 借錢梗要還，咪俾錢中介，投訴熱線: 2111 0998
+                    <strong>TF Money 為 TF Advances Limited 之品牌名稱（放債人牌照號碼：168/2026）</strong><br>
+                    <span style="color: #cc0000;">忠告：借錢梗要還，咪俾錢中介</span>，投訴熱線：<strong>2111 0998</strong>
                 </p>
             </div>
 
         </div>
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/4709782" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-builder.html">AI Website Software</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-tabs/mbr-tabs.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-tabs/mbr-tabs.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
 </body>

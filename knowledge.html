@@ -5,12 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v6.1.12, mobirise.com">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image:src" content="assets/images/knowledge-meta.png">
+  <meta property="og:image" content="assets/images/knowledge-meta.png">
+  <meta name="twitter:title" content="TF MONEY 知識中心 | 按揭資訊・計算機・成功案例">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/blue20and20black20minimalist20brand20logo-429x429.png" type="image/x-icon">
-  <meta name="description" content="">
+  <meta name="description" content="TF MONEY 知識中心匯集最新按揭資訊、按揭計算機、真實個案研究及客戶心聲。助您掌握市場動態，精明置業，慳息有道。立即探索！">
   
   
-  <title>knowledge</title>
+  <title>TF MONEY 知識中心 | 按揭資訊・計算機・成功案例</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
@@ -18,7 +22,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Bellota+Text:300,300i,400,400i,700,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellota+Text:300,300i,400,400i,700,700i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=tli0OQ"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=tli0OQ" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=aOLD7M"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=aOLD7M" type="text/css">
 
   
   
@@ -26,8 +30,51 @@
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="menu menu3 cid-vmNgCqC1sc" once="menu" id="menu3-2c">
+  <section data-bs-version="5.1" class="menu menu3 cid-vnaJbqElON" once="menu" id="menu3-6e">
     
+
+    <!-- ===== 自訂 CSS：支援 hover 展開下拉 ===== -->
+    <style>
+        @media (min-width: 992px) {
+            .navbar .dropdown:hover .dropdown-menu {
+                display: block !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+                margin-top: 0 !important;
+            }
+            .navbar .dropdown:hover > .dropdown-toggle {
+                background: transparent !important;
+            }
+            .navbar .dropdown .dropdown-menu {
+                pointer-events: auto;
+            }
+        }
+    </style>
+
+    <!-- ===== 自訂 JavaScript：強制父級跳轉 ===== -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 按揭產品 強制跳轉
+            var productLink = document.querySelector('a[href="product.html"].dropdown-toggle');
+            if (productLink) {
+                productLink.addEventListener("click", function(e) {
+                    window.location.href = "product.html";
+                    e.preventDefault();
+                    e.stopPropagation();
+                });
+            }
+            // 知識中心 強制跳轉
+            var knowledgeLink = document.querySelector('a[href="knowledge.html"].dropdown-toggle');
+            if (knowledgeLink) {
+                knowledgeLink.addEventListener("click", function(e) {
+                    window.location.href = "knowledge.html";
+                    e.preventDefault();
+                    e.stopPropagation();
+                });
+            }
+        });
+    </script>
+
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container">
             <div class="navbar-brand">
@@ -45,18 +92,15 @@
                 </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- 主選單：6項 -->
-                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><!-- 1. 首頁 -->
-                    
-
-                    <!-- 2. 關於我們 -->
-                    
-
-                    <!-- 3. 按揭產品（有子選單） -->
+                <!-- 主選單 -->
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><!-- 1. 關於我們 -->
                     <li class="nav-item">
                         <a class="nav-link link text-black text-primary display-4" href="about.html">關於我們</a>
-                    </li><li class="nav-item dropdown">
-                        <a class="nav-link link text-black dropdown-toggle display-4" href="product.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">按揭產品</a>
+                    </li>
+
+                    <!-- 2. 按揭產品（點擊跳轉 product.html，hover 展開下拉） -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link text-black dropdown-toggle display-4" href="product.html">按揭產品</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-product">
                             <a class="text-black dropdown-item display-4" href="product-introduction.html">按揭轉介</a>
                             <a class="text-black dropdown-item display-4" href="product-second-mortgage.html">物業二按</a>
@@ -66,10 +110,10 @@
                         </div>
                     </li>
 
-                    <!-- 4. 知識中心（有子選單） -->
+                    <!-- 3. 知識中心（點擊跳轉 knowledge.html，hover 展開下拉） -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link link text-black dropdown-toggle show display-4" href="knowledge.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">知識中心</a>
-                        <div class="dropdown-menu show" aria-labelledby="dropdown-knowledge" data-bs-popper="none">
+                        <a class="nav-link link text-black dropdown-toggle display-4" href="knowledge.html">知識中心</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-knowledge">
                             <a class="text-black dropdown-item text-primary display-4" href="blog.html">按揭博客</a>
                             <a class="text-black dropdown-item text-primary display-4" href="calculator.html">按揭計算機</a>
                             <a class="text-black dropdown-item text-primary display-4" href="case-studies.html">個案研究</a>
@@ -77,13 +121,15 @@
                         </div>
                     </li>
 
-                    <!-- 5. 常見問題 -->
-                    
-
-                    <!-- 6. 聯絡我們 -->
+                    <!-- 4. 常見問題 -->
                     <li class="nav-item">
                         <a class="nav-link link text-black text-primary display-4" href="faq.html">常見問題</a>
-                    </li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="contact.html">聯絡我們</a></li></ul>
+                    </li>
+
+                    <!-- 5. 聯絡我們 -->
+                    <li class="nav-item">
+                        <a class="nav-link link text-black text-primary display-4" href="contact.html">聯絡我們</a>
+                    </li></ul>
 
                 <!-- WhatsApp Icon + 號碼 -->
                 <div class="icons-menu">
@@ -93,7 +139,7 @@
                     </a>
                 </div>
 
-                <!-- 其餘 Icon（可選，已保留原有結構） -->
+                <!-- 其餘 Icon（可選） -->
                 
                 
                 
@@ -102,19 +148,20 @@
     </nav>
 </section>
 
-<section data-bs-version="5.1" class="header3 cid-vmRCNbF3qk" id="header3-2f">
+<section data-bs-version="5.1" class="header3 cid-vnaL71tn99" id="header3-6a">
     
 
     
-    <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(190, 211, 249);"></div>
+    <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(40, 104, 245);"></div>
 
     <div class="align-center container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
-                <h1 class="mbr-section-title mbr-fonts-style mb-2 display-1" style="text-align: center;"><br><br><strong>知識中心</strong>
+                <h1 class="mbr-section-title mbr-fonts-style mb-2 display-1" style="text-align: center; color: #ffffff;">
+                    <strong>知識中心</strong>
                 </h1>
-                <h2 class="mbr-section-subtitle mbr-fonts-style display-5" style="text-align: center; font-weight: normal;">
-                    最新按揭資訊、計算機、成功案例<br><br><br>
+                <h2 class="mbr-section-subtitle mbr-fonts-style display-5" style="text-align: center; font-weight: normal; color: rgba(255,255,255,0.85);">
+                    最新按揭資訊、計算機、成功案例
                 </h2>
                 <p class="mbr-text mbr-fonts-style display-7" style="">&nbsp;</p>
                 
@@ -123,86 +170,82 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="features3 cid-vmRGotwECr" id="features3-2h">
+<section data-bs-version="5.1" class="features3 cid-vnaL71Tnoh" id="features3-6b">
     
     
     <div class="container">
         
         <div class="row mt-4 justify-content-center">
 
-            <!-- ===== 卡片 1：按揭博客 ===== -->
+            <!-- ===== 知識 1：按揭博客 ===== -->
             <div class="item features-image col-12 col-md-6 col-lg-3">
                 <div class="item-wrapper">
                     <div class="item-img">
-                        <img src="assets/images/mbr-596x447.webp" alt="按揭博客">
+                        <img src="assets/images/mbr-596x447.webp" alt="按揭博客" style="border-radius: 12px;">
                     </div>
                     <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-7">
+                        <h5 class="item-title mbr-fonts-style display-7" style="color: #1a2a6c; font-weight: 700;">
                             <strong>📝 按揭博客</strong>
                         </h5>
-                        
-                        <p class="mbr-text mbr-fonts-style mt-3 display-7">
+                        <p class="mbr-text mbr-fonts-style mt-3 display-7" style="color: #444444;">
                             最新按揭資訊、利率走勢、置業攻略，助您掌握市場動態。
                         </p>
                     </div>
-                    <div class="mbr-section-btn item-footer mt-2" style="text-align: center;"><a href="blog.html" class="btn btn-primary item-btn display-7">了解更多 →</a></div>
+                    <div class="mbr-section-btn item-footer mt-2" style="text-align: center;"><a href="blog.html" class="btn btn-primary item-btn display-7" style="border-radius: 50px; padding: 0.4rem 1.8rem;">探索更多 →</a></div>
                 </div>
             </div>
 
-            <!-- ===== 卡片 2：按揭計算機 ===== -->
+            <!-- ===== 知識 2：按揭計算機 ===== -->
             <div class="item features-image col-12 col-md-6 col-lg-3">
                 <div class="item-wrapper">
                     <div class="item-img">
-                        <img src="assets/images/mbr-596x395.webp" alt="按揭計算機">
+                        <img src="assets/images/mbr-596x395.webp" alt="按揭計算機" style="border-radius: 12px;">
                     </div>
                     <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-7">
+                        <h5 class="item-title mbr-fonts-style display-7" style="color: #1a2a6c; font-weight: 700;">
                             <strong>🧮 按揭計算機</strong>
                         </h5>
-                        
-                        <p class="mbr-text mbr-fonts-style mt-3 display-7">
+                        <p class="mbr-text mbr-fonts-style mt-3 display-7" style="color: #444444;">
                             輸入貸款額、利率、還款期，即時計算每月供款，輕鬆規劃預算。
                         </p>
                     </div>
-                    <div class="mbr-section-btn item-footer mt-2" style="text-align: center;"><a href="calculator.html" class="btn btn-primary item-btn display-7">了解更多 →</a></div>
+                    <div class="mbr-section-btn item-footer mt-2" style="text-align: center;"><a href="calculator.html" class="btn btn-primary item-btn display-7" style="border-radius: 50px; padding: 0.4rem 1.8rem;">探索更多 →</a></div>
                 </div>
             </div>
 
-            <!-- ===== 卡片 3：個案研究 ===== -->
+            <!-- ===== 知識 3：個案研究 ===== -->
             <div class="item features-image col-12 col-md-6 col-lg-3">
                 <div class="item-wrapper">
                     <div class="item-img">
-                        <img src="assets/images/mbr-596x396.webp" alt="個案研究">
+                        <img src="assets/images/mbr-596x396.webp" alt="個案研究" style="border-radius: 12px;">
                     </div>
                     <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-7">
+                        <h5 class="item-title mbr-fonts-style display-7" style="color: #1a2a6c; font-weight: 700;">
                             <strong>📋 個案研究</strong>
                         </h5>
-                        
-                        <p class="mbr-text mbr-fonts-style mt-3 display-7">
-                            真實成功案例分享，了解我們如何為客戶解決按揭難題。
+                        <p class="mbr-text mbr-fonts-style mt-3 display-7" style="color: #444444;">
+                            參考案例 · 了解按揭解決方案。
                         </p>
                     </div>
-                    <div class="mbr-section-btn item-footer mt-2" style="text-align: center;"><a href="case-studies.html" class="btn btn-primary item-btn display-7">了解更多 →</a></div>
+                    <div class="mbr-section-btn item-footer mt-2" style="text-align: center;"><a href="case-studies.html" class="btn btn-primary item-btn display-7" style="border-radius: 50px; padding: 0.4rem 1.8rem;">探索更多 →</a></div>
                 </div>
             </div>
 
-            <!-- ===== 卡片 4：客戶心聲 ===== -->
+            <!-- ===== 知識 4：客戶心聲 ===== -->
             <div class="item features-image col-12 col-md-6 col-lg-3">
                 <div class="item-wrapper">
                     <div class="item-img">
-                        <img src="assets/images/mbr-596x477.webp" alt="客戶心聲">
+                        <img src="assets/images/mbr-596x477.webp" alt="客戶心聲" style="border-radius: 12px;">
                     </div>
                     <div class="item-content">
-                        <h5 class="item-title mbr-fonts-style display-7">
+                        <h5 class="item-title mbr-fonts-style display-7" style="color: #1a2a6c; font-weight: 700;">
                             <strong>💬 客戶心聲</strong>
                         </h5>
-                        
-                        <p class="mbr-text mbr-fonts-style mt-3 display-7">
-                            過千客戶真實評價，見證 TF Money 嘅專業服務。
+                        <p class="mbr-text mbr-fonts-style mt-3 display-7" style="color: #444444;">
+                            每一句感謝都係繼續進步嘅動力。
                         </p>
                     </div>
-                    <div class="mbr-section-btn item-footer mt-2" style="text-align: center;"><a href="testimonials.html" class="btn btn-primary item-btn display-7">了解更多 →</a></div>
+                    <div class="mbr-section-btn item-footer mt-2" style="text-align: center;"><a href="testimonials.html" class="btn btn-primary item-btn display-7" style="border-radius: 50px; padding: 0.4rem 1.8rem;">探索更多 →</a></div>
                 </div>
             </div>
 
@@ -210,7 +253,7 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="header18 cid-vmRImd2x1e" id="header18-2i">
+<section data-bs-version="5.1" class="header18 cid-vnaL727SQj" id="header18-6c">
 
     
 
@@ -233,7 +276,7 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="footer4 cid-vmV11Q5q3P" once="footers" id="footer4-4e">
+<section data-bs-version="5.1" class="footer4 cid-vmV11Q5q3P" once="footers" id="footer4-6d">
 
     
 
@@ -253,7 +296,7 @@
                 </div>
 
                 <p class="mbr-text mbr-fonts-style mt-2 display-7" style="font-size: 0.85rem; color: #555; line-height: 1.5; margin-bottom: 0.8rem;">
-                    上市公司集團成員<br>實力按揭專家
+                    上市公司全資附屬公司<br>實力按揭專家
                 </p>
 
                 <!-- Social Icons -->
@@ -311,7 +354,7 @@
                     <li class="mbr-text item-wrap"><a href="blog.html" style="color: #333; text-decoration: none;">按揭博客</a></li>
                     <li class="mbr-text item-wrap"><a href="calculator.html" style="color: #333; text-decoration: none;">按揭計算機</a></li>
                     <li class="mbr-text item-wrap"><a href="case-studies.html" style="color: #333; text-decoration: none;">個案研究</a></li>
-                    <li class="mbr-text item-wrap"><a href="testimonials.html" style="color: #333; text-decoration: none;" class="text-primary">客戶心聲</a></li>
+                    <li class="mbr-text item-wrap"><a href="testimonials.html" style="color: #333; text-decoration: none;">客戶心聲</a></li>
                 </ul>
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 mt-3 display-7" style="color: #1a2a6c; font-weight: 600;">
                     <strong>支援</strong>
@@ -322,19 +365,19 @@
                 </ul>
             </div>
 
-            <!-- ===== 版權聲明 ===== -->
+            <!-- ===== 版權聲明（已修改顏色） ===== -->
             <div class="col-12 mt-4">
                 <hr style="border-color: rgba(0,0,0,0.08);">
-                <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7" style="font-size: 0.8rem; color: #999; text-align: center;">
+                <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7" style="font-size: 0.9rem; color: #333333; text-align: center; line-height: 1.8;">
                     © Copyright 2026 TF Money - All Rights Reserved<br>
-                    TF Money 為 TF Advances Limited 之品牌名稱（放債人牌照號碼：168/2026）<br>
-                    忠告: 借錢梗要還，咪俾錢中介，投訴熱線: 2111 0998
+                    <strong>TF Money 為 TF Advances Limited 之品牌名稱（放債人牌照號碼：168/2026）</strong><br>
+                    <span style="color: #cc0000;">忠告：借錢梗要還，咪俾錢中介</span>，投訴熱線：<strong>2111 0998</strong>
                 </p>
             </div>
 
         </div>
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/4709782" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/offline-website-builder.html">Offline Website Software</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
 </body>
