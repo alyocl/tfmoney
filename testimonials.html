@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v6.1.12, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v6.1.12, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/blue20and20black20minimalist20brand20logo-429x429.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>testimonials</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Bellota+Text:300,300i,400,400i,700,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellota+Text:300,300i,400,400i,700,700i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=B9wUPU"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=B9wUPU" type="text/css">
+
+  <!-- ===== Modal 放大卡片 CSS ===== -->
+  <style>
+    .modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        z-index: 99999;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(4px);
+        padding: 2rem;
+    }
+    .modal-overlay.active {
+        display: flex;
+    }
+    .modal-box {
+        background: #ffffff;
+        max-width: 600px;
+        width: 100%;
+        border-radius: 20px;
+        padding: 2rem 2.2rem;
+        position: relative;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        animation: modalFadeIn 0.3s ease;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    @keyframes modalFadeIn {
+        from { opacity: 0; transform: translateY(30px) scale(0.95); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .modal-close {
+        position: absolute;
+        top: 12px;
+        right: 18px;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #999;
+        transition: color 0.2s;
+        line-height: 1;
+    }
+    .modal-close:hover {
+        color: #333;
+    }
+    .modal-box .modal-avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #e8f0fe;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .modal-box .modal-name {
+        font-weight: 700;
+        font-size: 1.3rem;
+        color: #1a2a6c;
+        margin: 0;
+    }
+    .modal-box .modal-tag {
+        font-size: 0.8rem;
+        background: #6592e6;
+        color: #fff;
+        padding: 2px 14px;
+        border-radius: 20px;
+        display: inline-block;
+        margin-top: 2px;
+    }
+    .modal-box .modal-text-wrapper {
+        position: relative;
+        margin: 1rem 0 0.8rem;
+        padding-left: 1.2rem;
+        border-left: 4px solid #6592e6;
+    }
+    .modal-box .modal-text-wrapper::before {
+        content: '"';
+        font-size: 2.5rem;
+        color: #6592e6;
+        position: absolute;
+        left: -6px;
+        top: -10px;
+        opacity: 0.3;
+        font-family: Georgia, serif;
+    }
+    .modal-box .modal-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+        margin: 0;
+    }
+    .modal-box .modal-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+    .modal-box .modal-stars {
+        color: #f5a623;
+        font-size: 1.2rem;
+        letter-spacing: 3px;
+    }
+    .modal-box .modal-date {
+        font-size: 0.85rem;
+        color: #aaa;
+    }
+    @media (max-width: 640px) {
+        .modal-box {
+            padding: 1.5rem;
+            max-width: 95%;
+        }
+        .modal-box .modal-text {
+            font-size: 1rem;
+        }
+        .modal-close {
+            font-size: 1.6rem;
+            top: 8px;
+            right: 12px;
+        }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- ===== MENU ===== -->
+  <section data-bs-version="5.1" class="menu menu3 cid-vmXkDVw0LA" once="menu" id="menu3-4f">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html"><img src="assets/images/blue20and20black20minimalist20brand20logo-429x429.webp" alt="TF Money Logo" style="height: 5rem;"></a>
+                </span>
+                
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- 主選單：6項 -->
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><!-- 1. 首頁 -->
+                    
+
+                    <!-- 2. 關於我們 -->
+                    
+
+                    <!-- 3. 按揭產品（有子選單） -->
+                    <li class="nav-item">
+                        <a class="nav-link link text-black text-primary display-4" href="about.html">關於我們</a>
+                    </li><li class="nav-item dropdown">
+                        <a class="nav-link link text-black dropdown-toggle display-4" href="product.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">按揭產品</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-product">
+                            <a class="text-black dropdown-item display-4" href="product-introduction.html">按揭轉介</a>
+                            <a class="text-black dropdown-item display-4" href="product-second-mortgage.html">物業二按</a>
+                            <a class="text-black dropdown-item display-4" href="product-refinance.html">轉按套現</a>
+                            <a class="text-black dropdown-item display-4" href="product-parking.html">車位按揭</a>
+                            <a class="text-black dropdown-item display-4" href="product-hos.html">居屋業主貸款</a>
+                        </div>
+                    </li>
+
+                    <!-- 4. 知識中心（有子選單） -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link text-black dropdown-toggle display-4" href="knowledge.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">知識中心</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-knowledge">
+                            <a class="text-black dropdown-item text-primary display-4" href="blog.html">按揭博客</a>
+                            <a class="text-black dropdown-item text-primary display-4" href="calculator.html">按揭計算機</a>
+                            <a class="text-black dropdown-item text-primary display-4" href="case-studies.html">個案研究</a>
+                            <a class="text-black dropdown-item text-primary display-4" href="testimonials.html">客戶心聲</a>
+                        </div>
+                    </li>
+
+                    <!-- 5. 常見問題 -->
+                    
+
+                    <!-- 6. 聯絡我們 -->
+                    <li class="nav-item">
+                        <a class="nav-link link text-black text-primary display-4" href="faq.html">常見問題</a>
+                    </li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="contact.html">聯絡我們</a></li></ul>
+
+                <!-- WhatsApp Icon + 號碼 -->
+                <div class="icons-menu">
+                    <a class="iconfont-wrapper" href="https://wa.me/99000000" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
+                        <span class="p-2 mbr-iconfont socicon-whatsapp socicon" style="color: rgb(47, 145, 15); fill: rgb(47, 145, 15);"></span>
+                        <span style="color: rgb(47, 145, 15); font-size: 20px;">即時Whatsapp查詢</span>
+                    </a>
+                </div>
+
+                <!-- 其餘 Icon（可選，已保留原有結構） -->
+                
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<!-- ===== HEADER3 ===== -->
+<section data-bs-version="5.1" class="header3 cid-vmXkDW9ZFA" id="header3-4g">
+    <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(26, 42, 108);"></div>
+    <div class="align-center container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <h1 class="mbr-section-title mbr-fonts-style mb-2 display-1" style="text-align: center; color: #ffffff;"><strong>客戶心聲</strong></h1>
+                <h2 class="mbr-section-subtitle mbr-fonts-style display-5" style="text-align: center; font-weight: normal; color: rgba(255,255,255,0.85);">
+                    每一句感謝都係繼續進步嘅動力
+                </h2>
+                <p class="mbr-text mbr-fonts-style display-7" style="">&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== 客戶心聲卡片（Click 放大） ===== -->
+<style class="cid-vmXmi31uZL" id="witsec-html-block-4m" data-rv-view="6842">
+    .testimonials-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 1rem 4rem;
+    }
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    .testimonial-card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 1.8rem 1.8rem 1.5rem;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        border: 1px solid #f0f0f0;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .testimonial-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+    .testimonial-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 0.8rem;
+    }
+    .testimonial-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #e8f0fe;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        flex-shrink: 0;
+    }
+    .testimonial-name {
+        font-weight: 600;
+        font-size: 1.05rem;
+        color: #1a2a6c;
+        margin: 0;
+    }
+    .testimonial-tag {
+        font-size: 0.7rem;
+        background: #6592e6;
+        color: #fff;
+        padding: 2px 12px;
+        border-radius: 20px;
+        display: inline-block;
+        margin-top: 2px;
+    }
+    .testimonial-text {
+        font-size: 0.98rem;
+        line-height: 1.7;
+        color: #333;
+        margin: 0.5rem 0 0.8rem;
+        flex: 1;
+        position: relative;
+        padding-left: 1.2rem;
+        border-left: 3px solid #6592e6;
+    }
+    .testimonial-text::before {
+        content: '"';
+        font-size: 2rem;
+        color: #6592e6;
+        position: absolute;
+        left: -6px;
+        top: -8px;
+        opacity: 0.3;
+        font-family: Georgia, serif;
+    }
+    .testimonial-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.3rem;
+    }
+    .testimonial-stars {
+        color: #f5a623;
+        font-size: 0.95rem;
+        letter-spacing: 2px;
+    }
+    .testimonial-date {
+        font-size: 0.75rem;
+        color: #aaa;
+    }
+    @media (max-width: 640px) {
+        .testimonial-grid {
+            grid-template-columns: 1fr;
+        }
+        .testimonial-card {
+            padding: 1.2rem;
+        }
+    }
+</style>
+
+<div class="testimonials-container" id="witsec-html-block-4m" data-rv-view="6842">
+    <div class="testimonial-grid">
+
+        <!-- 心聲 1 -->
+        <div class="testimonial-card" onclick="openModal('modal1')">
+            <div class="testimonial-header">
+                <div class="testimonial-avatar">👨</div>
+                <div>
+                    <div class="testimonial-name">陳先生</div>
+                    <span class="testimonial-tag">轉按客戶</span>
+                </div>
+            </div>
+            <div class="testimonial-text">由最初查詢到成功轉按，你哋嘅團隊跟得好貼，每一個步驟都解釋得好清楚。之前喺銀行等咗成個月都冇消息，你哋幾日就搞掂，真係好感激！</div>
+            <div class="testimonial-footer">
+                <span class="testimonial-stars">★★★★★</span>
+                <span class="testimonial-date">2026年6月</span>
+            </div>
+        </div>
+
+        <!-- 心聲 2 -->
+        <div class="testimonial-card" onclick="openModal('modal2')">
+            <div class="testimonial-header">
+                <div class="testimonial-avatar">👩</div>
+                <div>
+                    <div class="testimonial-name">李小姐</div>
+                    <span class="testimonial-tag">物業二按</span>
+                </div>
+            </div>
+            <div class="testimonial-text">我本身對按揭完全唔識，你哋唔嫌我煩，逐個方案解釋，仲幫我計埋邊個最抵。最後每月慳咗 $3,000，真心多謝你哋！</div>
+            <div class="testimonial-footer">
+                <span class="testimonial-stars">★★★★★</span>
+                <span class="testimonial-date">2026年6月</span>
+            </div>
+        </div>
+
+        <!-- 心聲 3 -->
+        <div class="testimonial-card" onclick="openModal('modal3')">
+            <div class="testimonial-header">
+                <div class="testimonial-avatar">👨</div>
+                <div>
+                    <div class="testimonial-name">張先生</div>
+                    <span class="testimonial-tag">居屋貸款</span>
+                </div>
+            </div>
+            <div class="testimonial-text">層居屋未補地價，去咗幾間銀行都話唔做。你哋幫我度身訂造方案，唔使補地價，一個星期就解決咗困擾我半年嘅問題，好感恩！</div>
+            <div class="testimonial-footer">
+                <span class="testimonial-stars">★★★★★</span>
+                <span class="testimonial-date">2026年5月</span>
+            </div>
+        </div>
+
+        <!-- 心聲 4 -->
+        <div class="testimonial-card" onclick="openModal('modal4')">
+            <div class="testimonial-header">
+                <div class="testimonial-avatar">👩</div>
+                <div>
+                    <div class="testimonial-name">王小姐</div>
+                    <span class="testimonial-tag">極速批核</span>
+                </div>
+            </div>
+            <div class="testimonial-text">生意周轉等錢用，銀行審批要等成個月。你哋真係 24 小時內幫我搞掂，資金到手嗰刻我差啲喊出嚟。多謝你哋喺我最需要嘅時候出現！</div>
+            <div class="testimonial-footer">
+                <span class="testimonial-stars">★★★★★</span>
+                <span class="testimonial-date">2026年5月</span>
+            </div>
+        </div>
+
+        <!-- 心聲 5 -->
+        <div class="testimonial-card" onclick="openModal('modal5')">
+            <div class="testimonial-header">
+                <div class="testimonial-avatar">👨</div>
+                <div>
+                    <div class="testimonial-name">劉先生</div>
+                    <span class="testimonial-tag">首置上車</span>
+                </div>
+            </div>
+            <div class="testimonial-text">第一次買樓乜都唔識，淨係知想借 9 成。你哋幫我計晒 DSR、壓力測試，仲教我點準備文件。最終成功上車，而家供款好輕鬆，多謝你哋嘅專業！</div>
+            <div class="testimonial-footer">
+                <span class="testimonial-stars">★★★★★</span>
+                <span class="testimonial-date">2026年4月</span>
+            </div>
+        </div>
+
+        <!-- 心聲 6 -->
+        <div class="testimonial-card" onclick="openModal('modal6')">
+            <div class="testimonial-header">
+                <div class="testimonial-avatar">👩</div>
+                <div>
+                    <div class="testimonial-name">黃小姐</div>
+                    <span class="testimonial-tag">債務重組</span>
+                </div>
+            </div>
+            <div class="testimonial-text">之前搵過其他財務公司，成日覺得佢哋呃人。你哋係第一個令我覺得安心嘅，你哋嘅轉介服務完全免費，所有銀行嘅手續、費用同條款都解釋得清清楚楚，仲教我點樣重建信貸評級。而家 TU 由 I 級升返上 F 級，全靠你哋！</div>
+            <div class="testimonial-footer">
+                <span class="testimonial-stars">★★★★★</span>
+                <span class="testimonial-date">2026年4月</span>
+            </div>
+        </div>
+
+        <!-- 心聲 7 -->
+        <div class="testimonial-card" onclick="openModal('modal7')">
+            <div class="testimonial-header">
+                <div class="testimonial-avatar">👩</div>
+                <div>
+                    <div class="testimonial-name">陳太</div>
+                    <span class="testimonial-tag">退休加按</span>
+                </div>
+            </div>
+            <div class="testimonial-text">我同老公已經退休，銀行話我哋年紀大唔肯批加按。你哋幫我安排個仔做擔保人，成功套現俾個仔上車。而家個個禮拜都見到個仔同新抱返嚟食飯，真係好開心！</div>
+            <div class="testimonial-footer">
+                <span class="testimonial-stars">★★★★★</span>
+                <span class="testimonial-date">2026年3月</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<section data-bs-version="5.1" class="header18 cid-vmXkDWMLSr" id="header18-4i">
+    <div class="align-center container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-2">
+                    <strong>需要專業按揭建議？</strong>
+                </h1>
+                <p class="mbr-text mbr-fonts-style mbr-white display-7" style="font-size: 1.2rem; opacity: 0.9;">
+                    立即聯絡我們嘅按揭專員，為您度身訂造最合適嘅貸款方案。
+                </p>
+                <div class="mbr-section-btn mt-3"><a class="btn btn-light btn-lg display-4" href="page4.html" style="padding: 0.8rem 3rem; border-radius: 50px; font-weight: 600; font-size: 1.1rem;">📞 聯絡我們</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<section data-bs-version="5.1" class="footer4 cid-vmXkDWW5T3" once="footers" id="footer4-4j">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-6 col-lg-3" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center;">
+                <div class="media-wrap">
+                    <a href="index.html">
+                        <img src="assets/images/blue20and20black20minimalist20brand20logo-429x429.webp" alt="TF Money Logo" style="width: 10rem; height: 10rem; object-fit: contain; display: block; margin: 0 auto;">
+                    </a>
+                </div>
+                <p class="mbr-text mbr-fonts-style mt-2 display-7" style="font-size: 0.85rem; color: #555; line-height: 1.5; margin-bottom: 0.8rem;">
+                    上市公司集團成員<br>實力按揭專家
+                </p>
+                <div class="social-row display-7" style="gap: 12px; justify-content: center;">
+                    <div class="soc-item">
+                        <a href="https://www.facebook.com/yourpage" target="_blank" style="color: #333; font-size: 1.5rem;">
+                            <span class="mbr-iconfont socicon-facebook socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://www.instagram.com/yourpage" target="_blank" style="color: #333; font-size: 1.5rem;">
+                            <span class="mbr-iconfont socicon-instagram socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://www.youtube.com/yourchannel" target="_blank" style="color: #333; font-size: 1.5rem;">
+                            <span class="mbr-iconfont socicon-youtube socicon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7" style="color: #1a2a6c; font-weight: 600;">
+                    <strong>公司資訊</strong>
+                </h5>
+                <ul class="list mbr-fonts-style display-4" style="padding-left: 0; list-style: none;">
+                    <li class="mbr-text item-wrap"><a href="about.html" style="color: #333; text-decoration: none;">關於我們</a></li>
+                    <li class="mbr-text item-wrap"><a href="legal.html" style="color: #333; text-decoration: none;">法律與政策</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7" style="color: #1a2a6c; font-weight: 600;">
+                    <strong>按揭產品</strong>
+                </h5>
+                <ul class="list mbr-fonts-style display-4" style="padding-left: 0; list-style: none;">
+                    <li class="mbr-text item-wrap"><a href="product-introduction.html" style="color: #333; text-decoration: none;">按揭轉介</a></li>
+                    <li class="mbr-text item-wrap"><a href="product-second-mortgage.html" style="color: #333; text-decoration: none;">物業二按</a></li>
+                    <li class="mbr-text item-wrap"><a href="product-refinance.html" style="color: #333; text-decoration: none;">轉按套現</a></li>
+                    <li class="mbr-text item-wrap"><a href="product-parking.html" style="color: #333; text-decoration: none;">車位按揭</a></li>
+                    <li class="mbr-text item-wrap"><a href="product-hos.html" style="color: #333; text-decoration: none;">居屋業主貸款</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7" style="color: #1a2a6c; font-weight: 600;">
+                    <strong>知識中心</strong>
+                </h5>
+                <ul class="list mbr-fonts-style display-4" style="padding-left: 0; list-style: none;">
+                    <li class="mbr-text item-wrap"><a href="blog.html" style="color: #333; text-decoration: none;">按揭博客</a></li>
+                    <li class="mbr-text item-wrap"><a href="calculator.html" style="color: #333; text-decoration: none;">按揭計算機</a></li>
+                    <li class="mbr-text item-wrap"><a href="case-studies.html" style="color: #333; text-decoration: none;">個案研究</a></li>
+                    <li class="mbr-text item-wrap"><a href="testimonials.html" style="color: #333; text-decoration: none;">客戶心聲</a></li>
+                </ul>
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 mt-3 display-7" style="color: #1a2a6c; font-weight: 600;">
+                    <strong>支援</strong>
+                </h5>
+                <ul class="list mbr-fonts-style display-4" style="padding-left: 0; list-style: none;">
+                    <li class="mbr-text item-wrap"><a href="faq.html" style="color: #333; text-decoration: none;">常見問題</a></li>
+                    <li class="mbr-text item-wrap"><a href="contact.html" style="color: #333; text-decoration: none;">聯絡我們</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 mt-4">
+                <hr style="border-color: rgba(0,0,0,0.08);">
+                <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7" style="font-size: 0.8rem; color: #999; text-align: center;">
+                    © Copyright 2026 TF Money - All Rights Reserved<br>
+                    TF Money 為 TF Advances Limited 之品牌名稱（放債人牌照號碼：168/2026）<br>
+                    忠告: 借錢梗要還，咪俾錢中介，投訴熱線: 2111 0998
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== MODAL 放大（7個） ===== -->
+
+<!-- Modal 1 -->
+<div class="modal-overlay" id="modal1" onclick="if(event.target===this) closeModal('modal1')">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('modal1')">✕</button>
+        <div class="modal-avatar">👨</div>
+        <div class="modal-name">陳先生</div>
+        <span class="modal-tag">轉按客戶</span>
+        <div class="modal-text-wrapper">
+            <div class="modal-text">由最初查詢到成功轉按，你哋嘅團隊跟得好貼，每一個步驟都解釋得好清楚。之前喺銀行等咗成個月都冇消息，你哋幾日就搞掂，真係好感激！</div>
+        </div>
+        <div class="modal-footer">
+            <span class="modal-stars">★★★★★</span>
+            <span class="modal-date">2026年6月</span>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal-overlay" id="modal2" onclick="if(event.target===this) closeModal('modal2')">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('modal2')">✕</button>
+        <div class="modal-avatar">👩</div>
+        <div class="modal-name">李小姐</div>
+        <span class="modal-tag">物業二按</span>
+        <div class="modal-text-wrapper">
+            <div class="modal-text">我本身對按揭完全唔識，你哋唔嫌我煩，逐個方案解釋，仲幫我計埋邊個最抵。最後每月慳咗 $3,000，真心多謝你哋！</div>
+        </div>
+        <div class="modal-footer">
+            <span class="modal-stars">★★★★★</span>
+            <span class="modal-date">2026年6月</span>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal-overlay" id="modal3" onclick="if(event.target===this) closeModal('modal3')">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('modal3')">✕</button>
+        <div class="modal-avatar">👨</div>
+        <div class="modal-name">張先生</div>
+        <span class="modal-tag">居屋貸款</span>
+        <div class="modal-text-wrapper">
+            <div class="modal-text">層居屋未補地價，去咗幾間銀行都話唔做。你哋幫我度身訂造方案，唔使補地價，一個星期就解決咗困擾我半年嘅問題，好感恩！</div>
+        </div>
+        <div class="modal-footer">
+            <span class="modal-stars">★★★★★</span>
+            <span class="modal-date">2026年5月</span>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal-overlay" id="modal4" onclick="if(event.target===this) closeModal('modal4')">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('modal4')">✕</button>
+        <div class="modal-avatar">👩</div>
+        <div class="modal-name">王小姐</div>
+        <span class="modal-tag">極速批核</span>
+        <div class="modal-text-wrapper">
+            <div class="modal-text">生意周轉等錢用，銀行審批要等成個月。你哋真係 24 小時內幫我搞掂，資金到手嗰刻我差啲喊出嚟。多謝你哋喺我最需要嘅時候出現！</div>
+        </div>
+        <div class="modal-footer">
+            <span class="modal-stars">★★★★★</span>
+            <span class="modal-date">2026年5月</span>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal-overlay" id="modal5" onclick="if(event.target===this) closeModal('modal5')">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('modal5')">✕</button>
+        <div class="modal-avatar">👨</div>
+        <div class="modal-name">劉先生</div>
+        <span class="modal-tag">首置上車</span>
+        <div class="modal-text-wrapper">
+            <div class="modal-text">第一次買樓乜都唔識，淨係知想借 9 成。你哋幫我計晒 DSR、壓力測試，仲教我點準備文件。最終成功上車，而家供款好輕鬆，多謝你哋嘅專業！</div>
+        </div>
+        <div class="modal-footer">
+            <span class="modal-stars">★★★★★</span>
+            <span class="modal-date">2026年4月</span>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="modal-overlay" id="modal6" onclick="if(event.target===this) closeModal('modal6')">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('modal6')">✕</button>
+        <div class="modal-avatar">👩</div>
+        <div class="modal-name">黃小姐</div>
+        <span class="modal-tag">債務重組</span>
+        <div class="modal-text-wrapper">
+            <div class="modal-text">之前搵過其他財務公司，成日覺得佢哋呃人。你哋係第一個令我覺得安心嘅，你哋嘅轉介服務完全免費，所有銀行嘅手續、費用同條款都解釋得清清楚楚，仲教我點樣重建信貸評級。而家 TU 由 I 級升返上 F 級，全靠你哋！</div>
+        </div>
+        <div class="modal-footer">
+            <span class="modal-stars">★★★★★</span>
+            <span class="modal-date">2026年4月</span>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 7 -->
+<div class="modal-overlay" id="modal7" onclick="if(event.target===this) closeModal('modal7')">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal('modal7')">✕</button>
+        <div class="modal-avatar">👩</div>
+        <div class="modal-name">陳太</div>
+        <span class="modal-tag">退休加按</span>
+        <div class="modal-text-wrapper">
+            <div class="modal-text">我同老公已經退休，銀行話我哋年紀大唔肯批加按。你哋幫我安排個仔做擔保人，成功套現俾個仔上車。而家個個禮拜都見到個仔同新抱返嚟食飯，真係好開心！</div>
+        </div>
+        <div class="modal-footer">
+            <span class="modal-stars">★★★★★</span>
+            <span class="modal-date">2026年3月</span>
+        </div>
+    </div>
+</div>
+
+<section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/4709782" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-maker.html">Free AI Website Maker</a></section>
+
+<script>
+    function openModal(id) {
+        document.getElementById(id).classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeModal(id) {
+        document.getElementById(id).classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.modal-overlay.active').forEach(function(el) {
+                el.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+    });
+</script>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  
+<script src="assets/smoothscroll/smooth-scroll.js"></script>  
+<script src="assets/ytplayer/index.js"></script>  
+<script src="assets/dropdown/js/navbar-dropdown.js"></script>  
+<script src="assets/theme/js/script.js"></script>  
+
+</body>
+</html>
